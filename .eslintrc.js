@@ -1,0 +1,17 @@
+module.exports = {
+  root: true,
+  extends: ['@react-native-community', "airbnb-base", "prettier"],
+  parser: '@typescript-eslint/parser',
+  plugins: ["@typescript-eslint", "prettier", "import", "react", "react-native", "react-hooks"],
+  rules: {
+    "import/extensions": 0,
+    "import/no-default-export": 2,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "object-shorthand": 0,
+    "prettier/prettier": ["error"],
+    "react-native/no-inline-styles": 0
+  }
+};
