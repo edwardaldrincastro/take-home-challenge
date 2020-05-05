@@ -23,7 +23,6 @@ import { InputErrorMessage } from './InputErrorMessage';
 
 export interface ITextInputProps extends TextInputProps {
   bottomText?: string;
-  errorIcon?: boolean;
   errorMessage?: string;
   errorUnderline?: boolean;
   label?: string;
@@ -39,7 +38,6 @@ export interface ITextInputProps extends TextInputProps {
 
 export const CustomTextInput = ({
   bottomText,
-  errorIcon,
   errorMessage,
   errorUnderline,
   label,
