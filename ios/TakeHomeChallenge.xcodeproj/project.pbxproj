@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TakeHomeChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TakeHomeChallengeTests.m */; };
+		04B437E3B5D44144AED06319 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5309CEDE50D84DD4B3A2F26C /* Roboto-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		226A77BD3C3953D62BAD3A2C /* libPods-TakeHomeChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E615A6C005EC7AE936091C15 /* libPods-TakeHomeChallenge.a */; };
+		2A2D877BBB374742B11BEFCA /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80CD79078D004A85B408BFFC /* Roboto-Italic.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TakeHomeChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TakeHomeChallengeTests.m */; };
+		3130FF852D094AC59029C76A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C28253EB3CA4D1D88ABD4DD /* Roboto-Regular.ttf */; };
+		3EACAC60F7CC4E79920173AB /* fred_icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD205B2A844E08BD9E5C56 /* fred_icomoon.ttf */; };
+		414D623D47C14095890D400C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAE06833A880408BADD6052F /* Roboto-Thin.ttf */; };
+		5D92BFFBA9784339A03C39F8 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12887391071B4D01A46BE57B /* Roboto-Light.ttf */; };
+		65F8D9E7BE724EB8B8789437 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA57CCD19A854269B8B4E938 /* Roboto-Medium.ttf */; };
 		ACAF5ED89851B68E0BC6545F /* libPods-TakeHomeChallenge-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD5792B0D24E211667F4551 /* libPods-TakeHomeChallenge-tvOS.a */; };
 		E6DECFAD7B24ADAFBFEE3B4D /* libPods-TakeHomeChallenge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C751569263A38D8335E9EEEA /* libPods-TakeHomeChallenge-tvOSTests.a */; };
+		ECE71B1F6C684701B618D2B3 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FCB35AFEA2245D388B358EF /* Roboto-Black.ttf */; };
 		FFF8E917D8C8A92DBE43E52D /* libPods-TakeHomeChallenge-TakeHomeChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BD9ADE38D60CAB36583B15 /* libPods-TakeHomeChallenge-TakeHomeChallengeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +52,7 @@
 		00E356EE1AD99517003FC87E /* TakeHomeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TakeHomeChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeHomeChallengeTests.m; sourceTree = "<group>"; };
+		12887391071B4D01A46BE57B /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TakeHomeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TakeHomeChallenge/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TakeHomeChallenge/AppDelegate.m; sourceTree = "<group>"; };
@@ -55,10 +64,17 @@
 		2D02E4901E0B4A5D006451C7 /* TakeHomeChallenge-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TakeHomeChallenge-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A934A6AEA32E9FA0D5E17BF /* Pods-TakeHomeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		43BD9ADE38D60CAB36583B15 /* libPods-TakeHomeChallenge-TakeHomeChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TakeHomeChallenge-TakeHomeChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCB35AFEA2245D388B358EF /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		500C730CB0DD0C5A102D022D /* Pods-TakeHomeChallenge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge-tvOS/Pods-TakeHomeChallenge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		5309CEDE50D84DD4B3A2F26C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		677CC9C288D9E9EC7B7997F5 /* Pods-TakeHomeChallenge-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge-tvOS/Pods-TakeHomeChallenge-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		80CD79078D004A85B408BFFC /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		8CDD205B2A844E08BD9E5C56 /* fred_icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = fred_icomoon.ttf; path = ../assets/fonts/fred_icomoon.ttf; sourceTree = "<group>"; };
+		9C28253EB3CA4D1D88ABD4DD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BAE06833A880408BADD6052F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		BB0A9B4A5E907C8ADD754EC1 /* Pods-TakeHomeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C751569263A38D8335E9EEEA /* libPods-TakeHomeChallenge-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TakeHomeChallenge-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA57CCD19A854269B8B4E938 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		D6E1CB1E4611C0DEA0879897 /* Pods-TakeHomeChallenge-TakeHomeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge-TakeHomeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge-TakeHomeChallengeTests/Pods-TakeHomeChallenge-TakeHomeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAB5CF0B3D6A84891E8AD476 /* Pods-TakeHomeChallenge-TakeHomeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge-TakeHomeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge-TakeHomeChallengeTests/Pods-TakeHomeChallenge-TakeHomeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCEB0C5D37F53CD3E3F48490 /* Pods-TakeHomeChallenge-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeChallenge-tvOSTests/Pods-TakeHomeChallenge-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +152,21 @@
 			name = TakeHomeChallenge;
 			sourceTree = "<group>";
 		};
+		1E30E06FEFAC488882EC4672 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FCB35AFEA2245D388B358EF /* Roboto-Black.ttf */,
+				5309CEDE50D84DD4B3A2F26C /* Roboto-Bold.ttf */,
+				80CD79078D004A85B408BFFC /* Roboto-Italic.ttf */,
+				12887391071B4D01A46BE57B /* Roboto-Light.ttf */,
+				CA57CCD19A854269B8B4E938 /* Roboto-Medium.ttf */,
+				9C28253EB3CA4D1D88ABD4DD /* Roboto-Regular.ttf */,
+				BAE06833A880408BADD6052F /* Roboto-Thin.ttf */,
+				8CDD205B2A844E08BD9E5C56 /* fred_icomoon.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +196,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				917F69AFB3EAE70AAD03E99A /* Pods */,
+				1E30E06FEFAC488882EC4672 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -194,7 +226,6 @@
 				E1FD1761E4FF68DF36A2942D /* Pods-TakeHomeChallenge-tvOSTests.debug.xcconfig */,
 				DCEB0C5D37F53CD3E3F48490 /* Pods-TakeHomeChallenge-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +240,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				D17032789D11D6EBE7A076C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +262,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				309E44BA9CCAAAF5611AF037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +325,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = ZS22927B43;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -340,6 +374,14 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				ECE71B1F6C684701B618D2B3 /* Roboto-Black.ttf in Resources */,
+				04B437E3B5D44144AED06319 /* Roboto-Bold.ttf in Resources */,
+				2A2D877BBB374742B11BEFCA /* Roboto-Italic.ttf in Resources */,
+				5D92BFFBA9784339A03C39F8 /* Roboto-Light.ttf in Resources */,
+				65F8D9E7BE724EB8B8789437 /* Roboto-Medium.ttf in Resources */,
+				3130FF852D094AC59029C76A /* Roboto-Regular.ttf in Resources */,
+				414D623D47C14095890D400C /* Roboto-Thin.ttf in Resources */,
+				3EACAC60F7CC4E79920173AB /* fred_icomoon.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +453,58 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		309E44BA9CCAAAF5611AF037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7467D308F6C901C8B882CBED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +547,58 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17032789D11D6EBE7A076C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHomeChallenge-TakeHomeChallengeTests/Pods-TakeHomeChallenge-TakeHomeChallengeTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeHomeChallenge-TakeHomeChallengeTests/Pods-TakeHomeChallenge-TakeHomeChallengeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6C59AAA7EE121FB97B65C6C /* [CP] Check Pods Manifest.lock */ = {
@@ -630,6 +776,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZS22927B43;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -657,6 +804,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZS22927B43;
 				INFOPLIST_FILE = TakeHomeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
