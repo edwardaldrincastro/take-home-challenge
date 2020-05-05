@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
-import { KeyboardAvoidingView, Platform } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import React, { Fragment } from 'react';
+import { KeyboardAvoidingView, Platform } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { Loader } from "./components";
+import { Loader } from './components';
 import {
   createRegistrationData,
   createStateData,
@@ -10,9 +10,9 @@ import {
   IStateDataContext,
   RegistrationDataContext,
   StateDataContext,
-} from "./contexts";
-import { RootNavigator } from "./Navigator";
-import { flexChild } from "./styles";
+} from './contexts';
+import { RootNavigator } from './Navigator';
+import { flexChild } from './styles';
 
 export const App = () => {
   const registrationData: IRegistrationDataContext = createRegistrationData();
@@ -32,7 +32,7 @@ export const App = () => {
                 </KeyboardAvoidingView>
               ),
             })}
-            <Loader visible={loadingVisible}/>
+            <Loader visible={loadingVisible} />
           </SafeAreaProvider>
         </RegistrationDataContext.Provider>
       </StateDataContext.Provider>

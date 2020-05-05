@@ -1,18 +1,18 @@
-import { CommonActions } from "@react-navigation/native";
-import { StackNavigationProp } from "@react-navigation/stack";
-import React from "react";
-import { Alert } from "react-native";
-import { Image } from "react-native-image-crop-picker";
+import { CommonActions } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import React from 'react';
+import { Alert } from 'react-native';
+import { Image } from 'react-native-image-crop-picker';
 
-import { ContentPage, CustomSpacer, SafeAreaPage } from "../../components";
-import { useRegistrationData, useStateData } from "../../contexts";
-import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES } from "../../integrations";
-import { sh12, sh32, sh40 } from "../../styles";
-import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from "../../utils";
-import { InputEmail } from "./InputEmail";
-import { InputName } from "./InputName";
-import { InputPassword } from "./InputPassword";
-import { UploadIDCard } from "./UploadIDCard";
+import { ContentPage, CustomSpacer, SafeAreaPage } from '../../components';
+import { useRegistrationData, useStateData } from '../../contexts';
+import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES } from '../../integrations';
+import { sh12, sh32, sh40 } from '../../styles';
+import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from '../../utils';
+import { InputEmail } from './InputEmail';
+import { InputName } from './InputName';
+import { InputPassword } from './InputPassword';
+import { UploadIDCard } from './UploadIDCard';
 
 interface SummaryProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -56,16 +56,16 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
   };
 
   const showLoader = () => {
-    setStateData({loading: true})
-  }
-  
+    setStateData({ loading: true });
+  };
+
   const hideLoader = () => {
-    setStateData({loading: false})
-  }
+    setStateData({ loading: false });
+  };
 
   const handlePressSubmit = async () => {
     validateInputImage();
-    showLoader()
+    showLoader();
     if (!buttonDisabled && Validator.isNotEmpty(inputImage.base64)) {
       // mock data without security
       const requestBody = {
@@ -78,7 +78,7 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
       const res = await AxiosInstance.post(SERVICES.USERS, requestBody);
       if (res.status === 200) {
         clearRegistrationData();
-        hideLoader()
+        hideLoader();
         navigation.dispatch(
           CommonActions.reset({
             index: 1,
@@ -86,7 +86,7 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
           }),
         );
       } else {
-        return AlertDialog('Error in Registration', hideLoader)
+        return AlertDialog('Error in Registration', hideLoader);
       }
     }
   };

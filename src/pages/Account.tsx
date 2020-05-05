@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { Alert, View } from "react-native";
-import { Image } from "react-native-image-crop-picker";
+import React, { useState } from 'react';
+import { Alert, View } from 'react-native';
+import { Image } from 'react-native-image-crop-picker';
 
-import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage } from "../components";
-import { useStateData } from "../contexts";
-import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES, storeData } from "../integrations";
-import { sh12 } from "../styles";
-import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from "../utils";
-import { InputEmail, InputName, UploadIDCard } from "./Registration";
+import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage } from '../components';
+import { useStateData } from '../contexts';
+import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES, storeData } from '../integrations';
+import { sh12 } from '../styles';
+import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from '../utils';
+import { InputEmail, InputName, UploadIDCard } from './Registration';
 
 export const AccountPage = () => {
   const { stateData, setStateData } = useStateData();
@@ -43,15 +43,15 @@ export const AccountPage = () => {
   };
 
   const showLoader = () => {
-    setStateData({loading: true})
-  }
-  
+    setStateData({ loading: true });
+  };
+
   const hideLoader = () => {
-    setStateData({loading: false})
-  }
+    setStateData({ loading: false });
+  };
 
   const handlePressSubmit = async () => {
-    showLoader()
+    showLoader();
     validateInputImage();
     if (Validator.isNotEmpty(inputImage.base64)) {
       // mock data without security
@@ -64,13 +64,13 @@ export const AccountPage = () => {
       };
       const res = await AxiosInstance.put(`${SERVICES.USER}${id}.json`, requestBody);
       if (res.status === 200) {
-        hideLoader()
+        hideLoader();
         const updatedUserData = { ...stateData.user, ...res.data };
         await storeData('user', updatedUserData);
         await setStateData(updatedUserData);
         setRightIcon('pencil');
       } else {
-        return AlertDialog('Error in Updating', hideLoader)
+        return AlertDialog('Error in Updating', hideLoader);
       }
     }
   };

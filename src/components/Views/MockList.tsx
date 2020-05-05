@@ -72,7 +72,7 @@ export const MockItem = () => {
 
 export const MockList = () => {
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <MockItem />
       <MockItem />
       <MockItem />

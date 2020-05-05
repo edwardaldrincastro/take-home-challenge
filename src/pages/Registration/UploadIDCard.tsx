@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { Image, Text, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
+import React, { Fragment } from 'react';
+import { Image, Text, TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
 
-import { IcoMoon } from "../..//icons";
-import { CustomSpacer } from "../../components";
-import { centerHV, colorDarkBlue, colorGray, DEVICE, fs12MedDarkBlue1, fs15MedBlack, sh12, sh20 } from "../../styles";
+import { IcoMoon } from '../..//icons';
+import { CustomSpacer } from '../../components';
+import { centerHV, colorDarkBlue, colorGray, DEVICE, fs12MedDarkBlue1, fs15MedBlack, sh12, sh20 } from '../../styles';
 
 interface UploadIDCardProps {
   disabled?: boolean;

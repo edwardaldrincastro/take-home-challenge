@@ -1,7 +1,7 @@
-import React from "react";
-import Modal from "react-native-modal";
+import React from 'react';
+import Modal from 'react-native-modal';
 
-import { noMargin } from "../../styles";
+import { noMargin } from '../../styles';
 
 export const BasicModal = ({
   animationIn,
@@ -12,8 +12,8 @@ export const BasicModal = ({
   onClose,
   visible,
 }: IBasicModalProps) => {
-  const defaultAnimationIn = animationIn !== undefined ? animationIn :  'slideInUp';
-  const defaultAnimationOut = animationOut !== undefined ? animationOut :  'slideOutDown';
+  const defaultAnimationIn = animationIn !== undefined ? animationIn : 'slideInUp';
+  const defaultAnimationOut = animationOut !== undefined ? animationOut : 'slideOutDown';
 
   return (
     <Modal

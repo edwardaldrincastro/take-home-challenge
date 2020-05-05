@@ -1,6 +1,6 @@
-import ImagePicker, { Image, Options } from "react-native-image-crop-picker";
+import ImagePicker, { Image, Options } from 'react-native-image-crop-picker';
 
-import { DEVICE } from "../../styles";
+import { DEVICE } from '../../styles';
 
 const options: Options = {
   includeBase64: true,
