@@ -1,15 +1,15 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const baseURL = 'https://take-home-challenge.firebaseio.com/';
+export const baseURL = "https://take-home-challenge.firebaseio.com/";
 
 export const AxiosInstance = axios.create({
   baseURL: baseURL,
   headers: {
-    'Content-Type': ' application/json',
+    "Content-Type": " application/json",
   },
 });
 
 export const SERVICES = {
-  USERS: 'users.json',
-  USER: 'users/',
+  USERS: "users.json",
+  USER: "users/",
 };

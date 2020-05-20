@@ -1,4 +1,4 @@
-import { scaleHeight, scaleWidth } from './scaler';
+import { scaleHeight, scaleWidth } from "./scaler";
 
 export const sh2 = scaleHeight(2);
 export const sh3 = scaleHeight(3);

@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { CustomSpacer, CustomTextInput } from '../../components';
-import { sh8 } from '../../styles';
+import { CustomSpacer, CustomTextInput } from "../../components";
+import { sh8 } from "../../styles";
 
 interface InputNameProps {
   inputGivenName: string;
@@ -27,7 +27,7 @@ export const InputName = ({
       <CustomTextInput
         editable={!disabled}
         errorMessage={inputGivenNameError}
-        errorUnderline={inputGivenNameError !== ''}
+        errorUnderline={inputGivenNameError !== ""}
         label="Given Name"
         noBorder={disabled}
         onChangeText={setInputGivenName}
@@ -39,7 +39,7 @@ export const InputName = ({
       <CustomTextInput
         editable={!disabled}
         errorMessage={inputLastNameError}
-        errorUnderline={inputLastNameError !== ''}
+        errorUnderline={inputLastNameError !== ""}
         label="Last Name"
         noBorder={disabled}
         onChangeText={setInputLastName}

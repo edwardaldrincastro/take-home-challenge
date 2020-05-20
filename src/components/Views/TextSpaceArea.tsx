@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import { Text, TextStyle } from 'react-native';
+import React, { Fragment } from "react";
+import { Text, TextStyle } from "react-native";
 
-import { CustomSpacer } from '../Views/Spacer';
+import { CustomSpacer } from "../Views/Spacer";
 
 export interface TextSpaceAreaProps {
   space: number;

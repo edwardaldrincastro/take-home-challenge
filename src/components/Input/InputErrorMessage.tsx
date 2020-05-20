@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import { Text } from 'react-native';
+import React, { Fragment } from "react";
+import { Text } from "react-native";
 
-import { fs16MedRed, sh8 } from '../../styles';
-import { CustomSpacer } from '../Views/Spacer';
+import { fs16MedRed, sh8 } from "../../styles";
+import { CustomSpacer } from "../Views/Spacer";
 
 export interface InputErrorMessageProps {
   errorMessage?: string;

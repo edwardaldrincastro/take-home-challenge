@@ -1,2 +1,2 @@
-export * from './Basic';
-export * from './Loader';
+export * from "./Basic";
+export * from "./Loader";

@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from 'react';
-import { View, ViewStyle } from 'react-native';
+import React, { FunctionComponent } from "react";
+import { View, ViewStyle } from "react-native";
 
-import { flexChild } from '../../styles';
+import { flexChild } from "../../styles";
 
 export interface CustomSpacerProps {
   space: number;

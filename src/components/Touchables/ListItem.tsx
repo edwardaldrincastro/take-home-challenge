@@ -1,7 +1,7 @@
-import React, { Fragment, FunctionComponent } from 'react';
-import { Text, TextStyle, TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
+import React, { Fragment, FunctionComponent } from "react";
+import { Text, TextStyle, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
 
-import { IcoMoon } from '../../icons';
+import { IcoMoon } from "../../icons";
 import {
   centerVertical,
   colorGray,
@@ -15,8 +15,8 @@ import {
   sw16,
   sw24,
   sw32,
-} from '../../styles';
-import { CustomFlexSpacer, CustomSpacer } from '../Views/Spacer';
+} from "../../styles";
+import { CustomFlexSpacer, CustomSpacer } from "../Views/Spacer";
 
 export interface ListItemProps {
   leftIcon?: string;

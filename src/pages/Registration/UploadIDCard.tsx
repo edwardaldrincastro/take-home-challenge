@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import { Image, Text, TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
+import React, { Fragment } from "react";
+import { Image, Text, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
 
-import { IcoMoon } from '../..//icons';
-import { CustomSpacer } from '../../components';
-import { centerHV, colorDarkBlue, colorGray, DEVICE, fs12MedDarkBlue1, fs15MedBlack, sh12, sh20 } from '../../styles';
+import { IcoMoon } from "../..//icons";
+import { CustomSpacer } from "../../components";
+import { centerHV, colorDarkBlue, colorGray, DEVICE, fs12MedDarkBlue1, fs15MedBlack, sh12, sh20 } from "../../styles";
 
 interface UploadIDCardProps {
   disabled?: boolean;
@@ -18,15 +18,15 @@ export const UploadIDCard = ({ handleAddMedia, inputImage, disabled }: UploadIDC
   const displayStyle: ViewStyle = {
     ...centerHV,
     height: cropHeight,
-    width: '100%',
-    borderStyle: 'dotted',
+    width: "100%",
+    borderStyle: "dotted",
     borderWidth: disabled === true ? 0 : 2,
     borderColor: colorGray.secondary,
   };
 
   const profileStyle: any = {
     height: cropHeight - 4,
-    width: '100%',
+    width: "100%",
   };
 
   return (
@@ -35,7 +35,7 @@ export const UploadIDCard = ({ handleAddMedia, inputImage, disabled }: UploadIDC
       <CustomSpacer space={sh12} />
       <TouchableWithoutFeedback onPress={disabled === true ? undefined : handleAddMedia}>
         <View style={displayStyle}>
-          {inputImage.base64 === '' ? (
+          {inputImage.base64 === "" ? (
             <Fragment>
               <IcoMoon name="camera" size={36} style={{ color: colorDarkBlue.primary }} />
               <CustomSpacer space={sh20} />

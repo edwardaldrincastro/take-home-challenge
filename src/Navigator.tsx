@@ -1,8 +1,8 @@
-import 'react-native-gesture-handler';
+import "react-native-gesture-handler";
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import React from 'react';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import React from "react";
 
 import {
   AccountPage,
@@ -16,7 +16,7 @@ import {
   SignUpPage,
   SummaryPage,
   WelcomePage,
-} from './pages';
+} from "./pages";
 
 const { Navigator, Screen } = createStackNavigator();
 

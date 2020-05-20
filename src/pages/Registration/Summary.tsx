@@ -1,18 +1,18 @@
-import { CommonActions } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
-import { Alert } from 'react-native';
-import { Image } from 'react-native-image-crop-picker';
+import { CommonActions } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
+import { Alert } from "react-native";
+import { Image } from "react-native-image-crop-picker";
 
-import { ContentPage, CustomSpacer, SafeAreaPage } from '../../components';
-import { useRegistrationData, useStateData } from '../../contexts';
-import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES } from '../../integrations';
-import { sh12, sh32, sh40 } from '../../styles';
-import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from '../../utils';
-import { InputEmail } from './InputEmail';
-import { InputName } from './InputName';
-import { InputPassword } from './InputPassword';
-import { UploadIDCard } from './UploadIDCard';
+import { ContentPage, CustomSpacer, SafeAreaPage } from "../../components";
+import { useRegistrationData, useStateData } from "../../contexts";
+import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES } from "../../integrations";
+import { sh12, sh32, sh40 } from "../../styles";
+import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from "../../utils";
+import { InputEmail } from "./InputEmail";
+import { InputName } from "./InputName";
+import { InputPassword } from "./InputPassword";
+import { UploadIDCard } from "./UploadIDCard";
 
 interface SummaryProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -51,7 +51,7 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
 
   const validateInputImage = () => {
     if (!Validator.isNotEmpty(inputImage.base64)) {
-      return Alert.alert('There is an error uploading your photo');
+      return Alert.alert("There is an error uploading your photo");
     }
   };
 
@@ -82,11 +82,11 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
         navigation.dispatch(
           CommonActions.reset({
             index: 1,
-            routes: [{ name: 'Welcome' }, { name: 'Login' }],
+            routes: [{ name: "Welcome" }, { name: "Login" }],
           }),
         );
       } else {
-        return AlertDialog('Error in Registration', hideLoader);
+        return AlertDialog("Error in Registration", hideLoader);
       }
     }
   };
@@ -94,7 +94,7 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
   const handleImageResult = (results: Image | Image[]) => {
     if (!Array.isArray(results)) {
       const { data, filename, size, mime, creationDate, path } = results;
-      const selectedImage: FileBase64 = { base64: data || '', name: filename, size, type: mime, date: creationDate, path };
+      const selectedImage: FileBase64 = { base64: data || "", name: filename, size, type: mime, date: creationDate, path };
       return setRegistrationData({ ...registrationData, PAGE_REGISTER_ID_PHOTO: selectedImage });
     }
   };
@@ -107,44 +107,44 @@ export const SummaryPage = ({ navigation }: SummaryProps) => {
   };
 
   const handleAddMedia = () => {
-    const takePhoto: RequestActionButton = { onPress: handleOpenCamera, text: 'Take a Photo' };
-    const choosePhoto: RequestActionButton = { onPress: handleOpenPicker, text: 'Photo Library' };
+    const takePhoto: RequestActionButton = { onPress: handleOpenCamera, text: "Take a Photo" };
+    const choosePhoto: RequestActionButton = { onPress: handleOpenPicker, text: "Photo Library" };
     const buttons = [takePhoto, choosePhoto];
     RequestActionUtil({
-      title: 'Upload your ID',
+      title: "Upload your ID",
       buttons: buttons,
     });
   };
 
-  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? '' : 'Please enter a valid name';
-  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? '' : 'Please enter a valid name';
-  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? '' : 'Please enter a valid email';
-  const errPassword = Validator.isEmpty(inputPassword) || Validator.isPassword(inputPassword) ? '' : 'Please enter a valid password';
-  let errRetypePassword = '';
+  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? "" : "Please enter a valid name";
+  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? "" : "Please enter a valid name";
+  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? "" : "Please enter a valid email";
+  const errPassword = Validator.isEmpty(inputPassword) || Validator.isPassword(inputPassword) ? "" : "Please enter a valid password";
+  let errRetypePassword = "";
 
   if (!Validator.isPassword(inputRetypePassword)) {
-    errRetypePassword = 'Please enter a valid password';
+    errRetypePassword = "Please enter a valid password";
   }
   if (inputPassword !== inputRetypePassword) {
     errRetypePassword = `Your password doesn't match`;
   }
 
   if (Validator.isEmpty(inputRetypePassword)) {
-    errRetypePassword = '';
+    errRetypePassword = "";
   }
 
   const buttonDisabled =
-    inputGivenName === '' ||
-    inputLastName === '' ||
-    inputEmail === '' ||
-    inputPassword === '' ||
-    inputRetypePassword === '' ||
-    inputImage.base64 === '' ||
-    errGivenName !== '' ||
-    errLastName !== '' ||
-    errEmail !== '' ||
-    errPassword !== '' ||
-    errRetypePassword !== '';
+    inputGivenName === "" ||
+    inputLastName === "" ||
+    inputEmail === "" ||
+    inputPassword === "" ||
+    inputRetypePassword === "" ||
+    inputImage.base64 === "" ||
+    errGivenName !== "" ||
+    errLastName !== "" ||
+    errEmail !== "" ||
+    errPassword !== "" ||
+    errRetypePassword !== "";
 
   return (
     <SafeAreaPage backButton={true} headerTitle="Registration">

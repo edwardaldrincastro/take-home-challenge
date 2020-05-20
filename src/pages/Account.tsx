@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Alert, View } from 'react-native';
-import { Image } from 'react-native-image-crop-picker';
+import React, { useState } from "react";
+import { Alert, View } from "react-native";
+import { Image } from "react-native-image-crop-picker";
 
-import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage } from '../components';
-import { useStateData } from '../contexts';
-import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES, storeData } from '../integrations';
-import { sh12 } from '../styles';
-import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from '../utils';
-import { InputEmail, InputName, UploadIDCard } from './Registration';
+import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage } from "../components";
+import { useStateData } from "../contexts";
+import { AxiosInstance, imageOpenCamera, imageOpenPicker, SERVICES, storeData } from "../integrations";
+import { sh12 } from "../styles";
+import { AlertDialog, RequestActionButton, RequestActionUtil, Validator } from "../utils";
+import { InputEmail, InputName, UploadIDCard } from "./Registration";
 
 export const AccountPage = () => {
   const { stateData, setStateData } = useStateData();
@@ -17,28 +17,28 @@ export const AccountPage = () => {
   const [inputGivenName, setInputGivenName] = useState<string>(givenName);
   const [inputLastName, setInputLastName] = useState<string>(lastName);
   const [inputImage, setInputImage] = useState<FileBase64>(identificationCard);
-  const [rightIcon, setRightIcon] = useState<string>('pencil');
+  const [rightIcon, setRightIcon] = useState<string>("pencil");
 
-  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? '' : 'Please enter a valid name';
-  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? '' : 'Please enter a valid name';
-  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? '' : 'Please enter a valid email';
+  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? "" : "Please enter a valid name";
+  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? "" : "Please enter a valid name";
+  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? "" : "Please enter a valid email";
 
   const buttonDisabled =
-    inputGivenName === '' ||
-    inputLastName === '' ||
-    inputEmail === '' ||
-    inputImage.base64 === '' ||
-    errGivenName !== '' ||
-    errLastName !== '' ||
-    errEmail !== '';
+    inputGivenName === "" ||
+    inputLastName === "" ||
+    inputEmail === "" ||
+    inputImage.base64 === "" ||
+    errGivenName !== "" ||
+    errLastName !== "" ||
+    errEmail !== "";
 
-  const isEditing = rightIcon === 'close';
-  const buttonText = isEditing ? 'Confirm' : undefined;
+  const isEditing = rightIcon === "close";
+  const buttonText = isEditing ? "Confirm" : undefined;
   const disabled = isEditing ? false : true;
 
   const validateInputImage = () => {
     if (!Validator.isNotEmpty(inputImage.base64)) {
-      return Alert.alert('There is an error uploading your photo');
+      return Alert.alert("There is an error uploading your photo");
     }
   };
 
@@ -66,11 +66,11 @@ export const AccountPage = () => {
       if (res.status === 200) {
         hideLoader();
         const updatedUserData = { ...stateData.user, ...res.data };
-        await storeData('user', updatedUserData);
+        await storeData("user", updatedUserData);
         await setStateData(updatedUserData);
-        setRightIcon('pencil');
+        setRightIcon("pencil");
       } else {
-        return AlertDialog('Error in Updating', hideLoader);
+        return AlertDialog("Error in Updating", hideLoader);
       }
     }
   };
@@ -78,7 +78,7 @@ export const AccountPage = () => {
   const handleImageResult = (results: Image | Image[]) => {
     if (!Array.isArray(results)) {
       const { data, filename, size, mime, creationDate, path } = results;
-      const selectedImage: FileBase64 = { base64: data || '', name: filename, size, type: mime, date: creationDate, path };
+      const selectedImage: FileBase64 = { base64: data || "", name: filename, size, type: mime, date: creationDate, path };
       return setInputImage(selectedImage);
     }
   };
@@ -91,24 +91,24 @@ export const AccountPage = () => {
   };
 
   const handleAddMedia = () => {
-    const takePhoto: RequestActionButton = { onPress: handleOpenCamera, text: 'Take a Photo' };
-    const choosePhoto: RequestActionButton = { onPress: handleOpenPicker, text: 'Photo Library' };
+    const takePhoto: RequestActionButton = { onPress: handleOpenCamera, text: "Take a Photo" };
+    const choosePhoto: RequestActionButton = { onPress: handleOpenPicker, text: "Photo Library" };
     const buttons = [takePhoto, choosePhoto];
     RequestActionUtil({
-      title: 'Upload your ID',
+      title: "Upload your ID",
       buttons: buttons,
     });
   };
 
   const handlePressEdit = () => {
-    if (rightIcon === 'close') {
+    if (rightIcon === "close") {
       setInputGivenName(givenName);
       setInputLastName(lastName);
       setInputEmail(email);
       setInputImage(identificationCard);
-      setRightIcon('pencil');
+      setRightIcon("pencil");
     } else {
-      setRightIcon('close');
+      setRightIcon("close");
     }
   };
 

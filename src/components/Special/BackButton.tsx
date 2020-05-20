@@ -1,10 +1,10 @@
-import { useNavigation, useNavigationState } from '@react-navigation/native';
-import React from 'react';
-import { TouchableWithoutFeedback, View } from 'react-native';
+import { useNavigation, useNavigationState } from "@react-navigation/native";
+import React from "react";
+import { TouchableWithoutFeedback, View } from "react-native";
 
-import { IcoMoon } from '../../icons';
-import { flexRow, fs18MedOrange, sw14 } from '../../styles';
-import { CustomSpacer } from '../Views/Spacer';
+import { IcoMoon } from "../../icons";
+import { flexRow, fs18MedOrange, sw14 } from "../../styles";
+import { CustomSpacer } from "../Views/Spacer";
 
 export interface BackButtonProps {
   handleBackButton?: () => void;

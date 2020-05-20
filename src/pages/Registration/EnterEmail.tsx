@@ -1,11 +1,11 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
 
-import { ContentPage, CustomSpacer, SafeAreaPage } from '../../components';
-import { useRegistrationData } from '../../contexts';
-import { sh40 } from '../../styles';
-import { Validator } from '../../utils';
-import { InputEmail } from './InputEmail';
+import { ContentPage, CustomSpacer, SafeAreaPage } from "../../components";
+import { useRegistrationData } from "../../contexts";
+import { sh40 } from "../../styles";
+import { Validator } from "../../utils";
+import { InputEmail } from "./InputEmail";
 
 interface RegisterEmailProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -16,11 +16,11 @@ export const RegisterEmailPage = ({ navigation }: RegisterEmailProps) => {
   const inputEmail = registrationData.PAGE_REGISTER_EMAIL;
 
   const heading = `Hey ${registrationData.PAGE_REGISTER_GIVEN_NAME},`;
-  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? '' : 'Please enter a valid email';
-  const buttonDisabled = inputEmail === '' || errEmail !== '';
+  const errEmail = Validator.isEmpty(inputEmail) || Validator.isEmail(inputEmail) ? "" : "Please enter a valid email";
+  const buttonDisabled = inputEmail === "" || errEmail !== "";
 
   const handlePressNext = () => {
-    navigation?.navigate('RegisterPassword');
+    navigation?.navigate("RegisterPassword");
   };
 
   const setInputEmail = (value: string) => {

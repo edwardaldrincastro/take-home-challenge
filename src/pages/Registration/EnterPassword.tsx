@@ -1,12 +1,12 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
-import { Keyboard } from 'react-native';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
+import { Keyboard } from "react-native";
 
-import { ContentPage, CustomSpacer, SafeAreaPage } from '../../components';
-import { useRegistrationData } from '../../contexts';
-import { sh40 } from '../../styles';
-import { Validator } from '../../utils';
-import { InputPassword } from './InputPassword';
+import { ContentPage, CustomSpacer, SafeAreaPage } from "../../components";
+import { useRegistrationData } from "../../contexts";
+import { sh40 } from "../../styles";
+import { Validator } from "../../utils";
+import { InputPassword } from "./InputPassword";
 
 interface RegisterPasswordProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -20,7 +20,7 @@ export const RegisterPasswordPage = ({ navigation }: RegisterPasswordProps) => {
   const handlePressNext = () => {
     if (Validator.isPassword(inputPassword) && Validator.isPassword(inputRetypePassword) && !buttonDisabled) {
       Keyboard.dismiss();
-      navigation?.navigate('RegisterIDCard');
+      navigation?.navigate("RegisterIDCard");
     }
   };
 
@@ -32,21 +32,21 @@ export const RegisterPasswordPage = ({ navigation }: RegisterPasswordProps) => {
     setRegistrationData({ ...registrationData, PAGE_REGISTER_RETYPE_PASSWORD: value });
   };
 
-  const errPassword = Validator.isEmpty(inputPassword) || Validator.isPassword(inputPassword) ? '' : 'Please enter a valid password';
-  let errRetypePassword = '';
+  const errPassword = Validator.isEmpty(inputPassword) || Validator.isPassword(inputPassword) ? "" : "Please enter a valid password";
+  let errRetypePassword = "";
 
   if (!Validator.isPassword(inputRetypePassword)) {
-    errRetypePassword = 'Please enter a valid password';
+    errRetypePassword = "Please enter a valid password";
   }
   if (inputPassword !== inputRetypePassword) {
     errRetypePassword = `Your password doesn't match`;
   }
 
   if (Validator.isEmpty(inputRetypePassword)) {
-    errRetypePassword = '';
+    errRetypePassword = "";
   }
 
-  const buttonDisabled = inputPassword === '' || inputRetypePassword === '' || errPassword !== '' || errRetypePassword !== '';
+  const buttonDisabled = inputPassword === "" || inputRetypePassword === "" || errPassword !== "" || errRetypePassword !== "";
 
   return (
     <SafeAreaPage backButton={true} headerTitle="Registration">

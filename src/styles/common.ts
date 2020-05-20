@@ -1,33 +1,33 @@
-import { Dimensions } from 'react-native';
+import { Dimensions } from "react-native";
 
-import { colorGray, colorRed } from './colors';
+import { colorGray, colorRed } from "./colors";
 
-export const alignSelfStart = { alignSelf: 'flex-start' } as const;
-export const centerHorizontal = { justifyContent: 'center' } as const;
-export const centerVertical = { alignItems: 'center' } as const;
+export const alignSelfStart = { alignSelf: "flex-start" } as const;
+export const centerHorizontal = { justifyContent: "center" } as const;
+export const centerVertical = { alignItems: "center" } as const;
 export const centerHV = { ...centerHorizontal, ...centerVertical } as const;
-export const spaceBetweenHorizontal = { justifyContent: 'space-between' } as const;
-export const spaceBetweenVertical = { alignContent: 'space-between' } as const;
+export const spaceBetweenHorizontal = { justifyContent: "space-between" } as const;
+export const spaceBetweenVertical = { alignContent: "space-between" } as const;
 export const spaceBetweenHV = { ...spaceBetweenHorizontal, ...spaceBetweenVertical } as const;
-export const spaceAroundHorizontal = { justifyContent: 'space-around' } as const;
-export const spaceAroundVertical = { alignContent: 'space-around' } as const;
+export const spaceAroundHorizontal = { justifyContent: "space-around" } as const;
+export const spaceAroundVertical = { alignContent: "space-around" } as const;
 export const spaceAroundHV = { ...spaceAroundHorizontal, ...spaceAroundVertical } as const;
 
 export const flexChild = { flex: 1 } as const;
 export const flexGrow = { flexGrow: 1 } as const;
 export const flexNone = { flex: 0 } as const;
 
-export const flexContainer = { display: 'flex' } as const;
-export const flexCol = { ...flexContainer, flexDirection: 'column' } as const;
-export const flexRow = { ...flexContainer, flexDirection: 'row' } as const;
+export const flexContainer = { display: "flex" } as const;
+export const flexCol = { ...flexContainer, flexDirection: "column" } as const;
+export const flexRow = { ...flexContainer, flexDirection: "row" } as const;
 export const flexColCC = { ...flexCol, ...centerHV } as const;
 export const flexRowCC = { ...flexRow, ...centerHV } as const;
 export const flexColSbSb = { ...flexCol, ...spaceBetweenHV } as const;
 export const flexRowSbSb = { ...flexRow, ...spaceBetweenHV } as const;
 export const flexColSaSa = { ...flexCol, ...spaceAroundHV } as const;
 export const flexRowSaSa = { ...flexRow, ...spaceAroundHV } as const;
-export const fullHeight = { height: '100%' } as const;
-export const fullWidth = { width: '100%' } as const;
+export const fullHeight = { height: "100%" } as const;
+export const fullWidth = { width: "100%" } as const;
 export const fullHW = { ...fullHeight, ...fullWidth } as const;
 export const borderBottomGray1 = { borderBottomWidth: 1, borderBottomColor: colorGray.secondary_8 } as const;
 export const borderBottomGray2 = { borderBottomWidth: 1, borderBottomColor: colorGray.secondary_5 } as const;
@@ -71,11 +71,11 @@ export const DEVICE: {
   SCREEN: DeviceSizeType;
 } = {
   WINDOW: {
-    WIDTH: Dimensions.get('window').width,
-    HEIGHT: Dimensions.get('window').height,
+    WIDTH: Dimensions.get("window").width,
+    HEIGHT: Dimensions.get("window").height,
   },
   SCREEN: {
-    WIDTH: Dimensions.get('screen').width,
-    HEIGHT: Dimensions.get('screen').height,
+    WIDTH: Dimensions.get("screen").width,
+    HEIGHT: Dimensions.get("screen").height,
   },
 };

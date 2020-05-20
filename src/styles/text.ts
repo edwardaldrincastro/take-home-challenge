@@ -1,15 +1,15 @@
-import { TextStyle } from 'react-native';
+import { TextStyle } from "react-native";
 
-import { RobotoLight, RobotoMedium } from '../constants';
-import { colorBlack, colorDarkBlue, colorOrange, colorRed, colorWhite } from './colors';
-import { sh12, sh15, sh16, sh18, sh24, sh40 } from './sizes';
+import { RobotoLight, RobotoMedium } from "../constants";
+import { colorBlack, colorDarkBlue, colorOrange, colorRed, colorWhite } from "./colors";
+import { sh12, sh15, sh16, sh18, sh24, sh40 } from "./sizes";
 
-export const fsAlignCenter: TextStyle = { textAlign: 'center' };
+export const fsAlignCenter: TextStyle = { textAlign: "center" };
 export const fsCapitalize: TextStyle = {
-  textTransform: 'capitalize',
+  textTransform: "capitalize",
 };
 export const fsUnderline: TextStyle = {
-  textDecorationLine: 'underline',
+  textDecorationLine: "underline",
 };
 
 export const fs12MedBlack: TextStyle = {

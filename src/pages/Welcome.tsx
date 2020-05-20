@@ -1,11 +1,11 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
-import { Image, View } from 'react-native';
-import { useSafeArea } from 'react-native-safe-area-context';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
+import { Image, View } from "react-native";
+import { useSafeArea } from "react-native-safe-area-context";
 
-import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage, TextSpaceArea } from '../components';
-import { LocalAssets } from '../constants';
-import { centerHV, flexChild, fs15LightBlack, fs24MedBlack, fsAlignCenter, sh16, sh8, sw240 } from '../styles';
+import { ContentPage, CustomFlexSpacer, CustomSpacer, SafeAreaPage, TextSpaceArea } from "../components";
+import { LocalAssets } from "../constants";
+import { centerHV, flexChild, fs15LightBlack, fs24MedBlack, fsAlignCenter, sh16, sh8, sw240 } from "../styles";
 
 interface WelcomePageProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -15,10 +15,10 @@ export const WelcomePage = ({ navigation }: WelcomePageProps) => {
   const { bottom } = useSafeArea();
 
   const handlePressLogin = () => {
-    navigation?.navigate('Login');
+    navigation?.navigate("Login");
   };
   const handlePressSignUp = () => {
-    navigation?.navigate('RegisterName');
+    navigation?.navigate("RegisterName");
   };
 
   return (
@@ -30,7 +30,7 @@ export const WelcomePage = ({ navigation }: WelcomePageProps) => {
         handleOnPressTextLink={handlePressLogin}>
         <CustomFlexSpacer />
         <View style={{ ...flexChild, ...centerHV }}>
-          <Image source={LocalAssets.AppIcon} style={{ width: sw240, height: sw240, resizeMode: 'contain' }} />
+          <Image source={LocalAssets.AppIcon} style={{ width: sw240, height: sw240, resizeMode: "contain" }} />
           <CustomFlexSpacer />
           <TextSpaceArea space={sh8} style={fs24MedBlack} text="Welcome" />
           <TextSpaceArea

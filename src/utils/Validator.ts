@@ -1,4 +1,4 @@
-import ValidatorJS from 'validator';
+import ValidatorJS from "validator";
 
 const isEmail = (email: string) => {
   return ValidatorJS.isEmail(email);
@@ -20,7 +20,7 @@ const isNameFull = (value: string, allowEmpty?: boolean) => {
   if (allowEmpty === true && value.length === 0) {
     return true;
   }
-  const parts = value.split(' ');
+  const parts = value.split(" ");
   for (let index = 0; index < parts.length; index++) {
     const part = parts[index];
     if (!isName(part)) {

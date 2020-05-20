@@ -1,8 +1,8 @@
-import React, { Fragment, ReactNode } from 'react';
-import { SafeAreaView, StatusBar, StatusBarStyle, ViewStyle } from 'react-native';
+import React, { Fragment, ReactNode } from "react";
+import { SafeAreaView, StatusBar, StatusBarStyle, ViewStyle } from "react-native";
 
-import { colorWhite, flexChild, flexNone } from '../../styles';
-import { CustomHeader, CustomHeaderProps } from '../Views';
+import { colorWhite, flexChild, flexNone } from "../../styles";
+import { CustomHeader, CustomHeaderProps } from "../Views";
 
 interface SafeArePageProps extends CustomHeaderProps {
   barStyle?: StatusBarStyle;
@@ -20,7 +20,7 @@ export const SafeAreaPage = ({
   topBackgroundColor,
   ...headerProps
 }: SafeArePageProps) => {
-  const defaultBarStyle = barStyle !== undefined ? barStyle : 'dark-content';
+  const defaultBarStyle = barStyle !== undefined ? barStyle : "dark-content";
 
   const safeAreaTopStyle: ViewStyle = {
     ...flexNone,

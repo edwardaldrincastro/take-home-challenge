@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState } from "react";
 
-import { CustomSpacer, CustomTextInput } from '../../components';
-import { sh8 } from '../../styles';
+import { CustomSpacer, CustomTextInput } from "../../components";
+import { sh8 } from "../../styles";
 
 interface InputPasswordProps {
   inputPassword: string;
@@ -21,7 +21,7 @@ export const InputPassword = ({
   setInputRetypePassword,
 }: InputPasswordProps) => {
   const [showPassword, setShowPassword] = useState<boolean>(true);
-  const showPasswordText = showPassword ? 'Show Password' : 'Hide Password';
+  const showPasswordText = showPassword ? "Show Password" : "Hide Password";
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -32,7 +32,7 @@ export const InputPassword = ({
       <CustomTextInput
         autoCapitalize="none"
         errorMessage={inputPasswordError}
-        errorUnderline={inputPasswordError !== ''}
+        errorUnderline={inputPasswordError !== ""}
         label="Password"
         onChangeText={setInputPassword}
         placeholder="Password"
@@ -46,7 +46,7 @@ export const InputPassword = ({
         bottomText={showPasswordText}
         onPressBottomText={handleShowPassword}
         errorMessage={inputRetypePasswordError}
-        errorUnderline={inputRetypePasswordError !== ''}
+        errorUnderline={inputRetypePasswordError !== ""}
         label="Retype Password"
         onChangeText={setInputRetypePassword}
         placeholder="Retype Password"

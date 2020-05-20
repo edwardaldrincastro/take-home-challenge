@@ -1,4 +1,4 @@
-import { ActionSheetIOS, Alert, Platform } from 'react-native';
+import { ActionSheetIOS, Alert, Platform } from "react-native";
 
 export interface RequestActionButton {
   text: string;
@@ -13,14 +13,14 @@ export interface RequestActionProps {
 
 export const RequestActionUtil = ({ buttons, message, title }: RequestActionProps) => {
   let fullButtons: RequestActionButton[] = [...buttons];
-  if (Platform.OS === 'android') {
+  if (Platform.OS === "android") {
     Alert.alert(title, message, [...fullButtons].reverse(), { cancelable: true });
-  } else if (Platform.OS === 'ios') {
+  } else if (Platform.OS === "ios") {
     fullButtons = [
       ...fullButtons,
       {
         onPress: () => {},
-        text: 'Cancel',
+        text: "Cancel",
       },
     ];
     ActionSheetIOS.showActionSheetWithOptions(

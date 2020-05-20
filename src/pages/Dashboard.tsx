@@ -1,11 +1,11 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React, { Fragment, useEffect } from 'react';
-import { Text, TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React, { Fragment, useEffect } from "react";
+import { Text, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
 
-import { CustomFlexSpacer, CustomFooter, CustomSpacer, MockList, SafeAreaPage } from '../components';
-import { useStateData } from '../contexts';
-import { IcoMoon } from '../icons';
-import { getData } from '../integrations';
+import { CustomFlexSpacer, CustomFooter, CustomSpacer, MockList, SafeAreaPage } from "../components";
+import { useStateData } from "../contexts";
+import { IcoMoon } from "../icons";
+import { getData } from "../integrations";
 import {
   centerVertical,
   colorOrange,
@@ -21,7 +21,7 @@ import {
   sh56,
   sw16,
   sw24,
-} from '../styles';
+} from "../styles";
 
 interface DashboardProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -31,20 +31,20 @@ export const DashboardPage = ({ navigation }: DashboardProps) => {
   const { stateData, setStateData } = useStateData();
 
   const getUser = async () => {
-    const currentUser = await getData('user');
+    const currentUser = await getData("user");
     setStateData({ user: currentUser });
   };
 
   const handleOnPressSettings = () => {
-    navigation.navigate('Settings');
+    navigation.navigate("Settings");
   };
 
-  const footer = [{ icon: 'home' }, { icon: 'search' }];
-  const name = stateData.user !== undefined ? stateData.user.givenName : '';
+  const footer = [{ icon: "home" }, { icon: "search" }];
+  const name = stateData.user !== undefined ? stateData.user.givenName : "";
   const container: ViewStyle = { ...px(sw24), backgroundColor: colorOrange.primary };
 
   useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
+    const unsubscribe = navigation.addListener("focus", () => {
       getUser();
     });
 

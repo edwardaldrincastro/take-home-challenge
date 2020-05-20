@@ -1,2 +1,2 @@
-export * from './ContentPage';
-export * from './SafeAreaPage';
+export * from "./ContentPage";
+export * from "./SafeAreaPage";

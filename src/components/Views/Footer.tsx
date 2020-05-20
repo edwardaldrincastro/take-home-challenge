@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react';
-import { TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
+import React, { FunctionComponent } from "react";
+import { TouchableWithoutFeedback, View, ViewStyle } from "react-native";
 
-import { IcoMoon } from '../../icons';
-import { centerHV, colorGray, colorOrange, colorWhite, flexChild, flexRow, px, sh50, sw24, sw30 } from '../../styles';
+import { IcoMoon } from "../../icons";
+import { centerHV, colorGray, colorOrange, colorWhite, flexChild, flexRow, px, sh50, sw24, sw30 } from "../../styles";
 
 export interface CustomFooterProps {
   activeIndex: number;

@@ -1,1 +1,1 @@
-export * from './IcoMoon';
+export * from "./IcoMoon";

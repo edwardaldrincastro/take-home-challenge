@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import { Text, TextStyle } from 'react-native';
+import React, { Fragment } from "react";
+import { Text, TextStyle } from "react-native";
 
-import { fs16MedOrange, fsAlignCenter, fsCapitalize } from '../../styles';
-import { CustomSpacer } from '../Views/Spacer';
+import { fs16MedOrange, fsAlignCenter, fsCapitalize } from "../../styles";
+import { CustomSpacer } from "../Views/Spacer";
 
 interface LinkTextPageProps {
   space: number;

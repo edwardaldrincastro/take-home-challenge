@@ -1,8 +1,8 @@
-import React from 'react';
-import { ActivityIndicator, View } from 'react-native';
+import React from "react";
+import { ActivityIndicator, View } from "react-native";
 
-import { centerHV, colorWhite, fullHeight } from '../../styles';
-import { BasicModal } from './Basic';
+import { centerHV, colorWhite, fullHeight } from "../../styles";
+import { BasicModal } from "./Basic";
 
 interface LoaderProps {
   visible: boolean;

@@ -1,9 +1,9 @@
-import { CommonActions } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
+import { CommonActions } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
 
-import { ContentPage, ListItem, SafeAreaPage } from '../components';
-import { useStateData } from '../contexts';
+import { ContentPage, ListItem, SafeAreaPage } from "../components";
+import { useStateData } from "../contexts";
 
 interface SettingsPageProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -17,12 +17,12 @@ export const SettingsPage = ({ navigation }: SettingsPageProps) => {
     navigation.dispatch(
       CommonActions.reset({
         index: 0,
-        routes: [{ name: 'Welcome' }],
+        routes: [{ name: "Welcome" }],
       }),
     );
   };
   const handlePressAccount = () => {
-    navigation.navigate('Account');
+    navigation.navigate("Account");
   };
 
   return (

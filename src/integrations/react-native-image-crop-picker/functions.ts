@@ -1,13 +1,13 @@
-import ImagePicker, { Image, Options } from 'react-native-image-crop-picker';
+import ImagePicker, { Image, Options } from "react-native-image-crop-picker";
 
-import { DEVICE } from '../../styles';
+import { DEVICE } from "../../styles";
 
 const options: Options = {
   includeBase64: true,
-  mediaType: 'photo',
+  mediaType: "photo",
   multiple: false,
   cropping: true,
-  cropperToolbarTitle: 'Edit Photo',
+  cropperToolbarTitle: "Edit Photo",
   // android
   freeStyleCropEnabled: true,
 };
@@ -27,11 +27,11 @@ export const imageOpenPicker = async (handleSuccess: SuccessCallback) => {
     });
     handleSuccess(image);
   } catch (error) {
-    if (JSON.stringify(error).includes('cancelled')) {
-      console.log('User Cancelled', error);
-      return '';
+    if (JSON.stringify(error).includes("cancelled")) {
+      console.log("User Cancelled", error);
+      return "";
     }
-    return console.log('error', error);
+    return console.log("error", error);
   }
 };
 
@@ -45,10 +45,10 @@ export const imageOpenCamera = async (handleSuccess: SuccessCallback) => {
     });
     handleSuccess(image);
   } catch (error) {
-    if (JSON.stringify(error).includes('cancelled')) {
-      console.log('User Cancelled', error);
-      return '';
+    if (JSON.stringify(error).includes("cancelled")) {
+      console.log("User Cancelled", error);
+      return "";
     }
-    return console.log('error', error);
+    return console.log("error", error);
   }
 };

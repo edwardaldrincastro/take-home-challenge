@@ -1,7 +1,7 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
 
-import { ContentPage, SafeAreaPage } from '../components';
+import { ContentPage, SafeAreaPage } from "../components";
 
 interface SignUpPageProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -9,7 +9,7 @@ interface SignUpPageProps {
 
 export const SignUpPage = ({ navigation }: SignUpPageProps) => {
   const handlePressNext = () => {
-    navigation?.navigate('Login');
+    navigation?.navigate("Login");
   };
   return (
     <SafeAreaPage backButton={true} headerTitle="Sign Up">

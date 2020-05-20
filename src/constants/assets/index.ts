@@ -1,4 +1,4 @@
-import AppIcon from '../../../assets/images/AppIcon.png';
+import AppIcon from "../../../assets/images/AppIcon.png";
 
 export const LocalAssets = {
   AppIcon: AppIcon,

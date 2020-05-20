@@ -1,10 +1,10 @@
-import React, { FunctionComponent, ReactNode } from 'react';
-import { ScrollView, View, ViewStyle } from 'react-native';
-import { useSafeArea } from 'react-native-safe-area-context';
+import React, { FunctionComponent, ReactNode } from "react";
+import { ScrollView, View, ViewStyle } from "react-native";
+import { useSafeArea } from "react-native-safe-area-context";
 
-import { flexChild, flexGrow, fs15LightBlack, fs24LightBlack, fs24MedBlack, px, sh16, sh24, sh6, sh8, sw32 } from '../../styles';
-import { CustomButton, LinkTextPage } from '../Touchables';
-import { CustomFlexSpacer, CustomSpacer, TextSpaceArea } from '../Views';
+import { flexChild, flexGrow, fs15LightBlack, fs24LightBlack, fs24MedBlack, px, sh16, sh24, sh6, sh8, sw32 } from "../../styles";
+import { CustomButton, LinkTextPage } from "../Touchables";
+import { CustomFlexSpacer, CustomSpacer, TextSpaceArea } from "../Views";
 
 export interface ContentPageProps {
   buttonDisabled?: boolean;

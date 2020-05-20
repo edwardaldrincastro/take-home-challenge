@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { ScrollView, Text, View, ViewStyle } from 'react-native';
+import React, { Fragment } from "react";
+import { ScrollView, Text, View, ViewStyle } from "react-native";
 
 import {
   centerHV,
@@ -18,8 +18,8 @@ import {
   sh8,
   sw24,
   sw40,
-} from '../../styles';
-import { CustomFlexSpacer, CustomSpacer } from './Spacer';
+} from "../../styles";
+import { CustomFlexSpacer, CustomSpacer } from "./Spacer";
 
 export const MockItem = () => {
   const listContainer: ViewStyle = { ...px(sw24), ...py(sh8) };

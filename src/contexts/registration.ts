@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from "react";
 
 export interface IRegistrationData {
   PAGE_REGISTER_LAST_NAME: string;
@@ -18,16 +18,16 @@ export interface IRegistrationDataContext {
 }
 
 const initialState: IRegistrationData = {
-  PAGE_REGISTER_LAST_NAME: '',
-  PAGE_REGISTER_GIVEN_NAME: '',
-  PAGE_REGISTER_EMAIL: '',
-  PAGE_REGISTER_PASSWORD: '',
-  PAGE_REGISTER_RETYPE_PASSWORD: '',
+  PAGE_REGISTER_LAST_NAME: "",
+  PAGE_REGISTER_GIVEN_NAME: "",
+  PAGE_REGISTER_EMAIL: "",
+  PAGE_REGISTER_PASSWORD: "",
+  PAGE_REGISTER_RETYPE_PASSWORD: "",
   PAGE_REGISTER_ID_PHOTO: {
-    name: '',
+    name: "",
     size: -1,
-    type: '',
-    base64: '',
+    type: "",
+    base64: "",
   },
 };
 

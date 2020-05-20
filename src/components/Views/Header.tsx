@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from 'react';
-import { Text, TouchableWithoutFeedback, View, ViewStyle } from 'react-native';
+import React, { FunctionComponent } from "react";
+import { Text, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
 
-import { IcoMoon } from '../../icons';
-import { centerHorizontal, centerHV, colorBlack, colorWhite, flexRow, fs15MedBlack, px, sh60, sw20, sw30, sw60 } from '../../styles';
-import { BackButton } from '../Special/BackButton';
-import { CustomFlexSpacer } from './Spacer';
+import { IcoMoon } from "../../icons";
+import { centerHorizontal, centerHV, colorBlack, colorWhite, flexRow, fs15MedBlack, px, sh60, sw20, sw30, sw60 } from "../../styles";
+import { BackButton } from "../Special/BackButton";
+import { CustomFlexSpacer } from "./Spacer";
 
 export interface CustomHeaderProps {
   backButton?: boolean;

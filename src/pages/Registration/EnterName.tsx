@@ -1,11 +1,11 @@
-import { StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
+import { StackNavigationProp } from "@react-navigation/stack";
+import React from "react";
 
-import { ContentPage, CustomSpacer, SafeAreaPage } from '../../components';
-import { useRegistrationData } from '../../contexts';
-import { sh40 } from '../../styles';
-import { Validator } from '../../utils';
-import { InputName } from './InputName';
+import { ContentPage, CustomSpacer, SafeAreaPage } from "../../components";
+import { useRegistrationData } from "../../contexts";
+import { sh40 } from "../../styles";
+import { Validator } from "../../utils";
+import { InputName } from "./InputName";
 
 interface RegisterNameProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -17,13 +17,13 @@ export const RegisterNamePage = ({ navigation }: RegisterNameProps) => {
   const inputGivenName = registrationData.PAGE_REGISTER_GIVEN_NAME;
   const inputLastName = registrationData.PAGE_REGISTER_LAST_NAME;
 
-  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? '' : 'Please enter a valid name';
-  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? '' : 'Please enter a valid name';
+  const errGivenName = Validator.isEmpty(inputGivenName) || Validator.isNameFull(inputGivenName) ? "" : "Please enter a valid name";
+  const errLastName = Validator.isEmpty(inputLastName) || Validator.isNameFull(inputLastName) ? "" : "Please enter a valid name";
 
-  const buttonDisabled = inputGivenName === '' || inputLastName === '' || errGivenName !== '' || errLastName !== '';
+  const buttonDisabled = inputGivenName === "" || inputLastName === "" || errGivenName !== "" || errLastName !== "";
 
   const handlePressNext = () => {
-    navigation?.navigate('RegisterEmail');
+    navigation?.navigate("RegisterEmail");
   };
 
   const setInputGivenName = (value: string) => {

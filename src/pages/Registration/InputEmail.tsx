@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { CustomSpacer, CustomTextInput } from '../../components';
-import { sh8 } from '../../styles';
+import { CustomSpacer, CustomTextInput } from "../../components";
+import { sh8 } from "../../styles";
 
 interface InputEmailProps {
   inputEmail: string;
@@ -17,7 +17,7 @@ export const InputEmail = ({ inputEmail, inputEmailError, disabled, setInputEmai
         autoCapitalize="none"
         editable={!disabled}
         errorMessage={inputEmailError}
-        errorUnderline={inputEmailError !== ''}
+        errorUnderline={inputEmailError !== ""}
         label="Email"
         noBorder={disabled}
         onChangeText={setInputEmail}

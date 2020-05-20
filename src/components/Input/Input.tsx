@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { Text, TextInput, TextInputProps, TextStyle, View, ViewStyle } from 'react-native';
+import React, { Fragment, useState } from "react";
+import { Text, TextInput, TextInputProps, TextStyle, View, ViewStyle } from "react-native";
 
 import {
   borderBottomGray1,
@@ -15,9 +15,9 @@ import {
   sh16,
   sh8,
   sw4,
-} from '../../styles';
-import { CustomFlexSpacer, CustomSpacer } from '../Views/Spacer';
-import { InputErrorMessage } from './InputErrorMessage';
+} from "../../styles";
+import { CustomFlexSpacer, CustomSpacer } from "../Views/Spacer";
+import { InputErrorMessage } from "./InputErrorMessage";
 
 // import { InputRightIcon } from "./InputRightIcon";
 
@@ -56,7 +56,7 @@ export const CustomTextInput = ({
 
   const noBorderBottom = noBorder === true ? { borderBottomWidth: 0 } : undefined;
   const borderBottom = errUnderline ? borderBottomRed : borderBottomGray1;
-  const textInputStyle: ViewStyle = { ...borderBottom, ...noBorderBottom, alignItems: 'center', flexDirection: 'row', ...viewStyle };
+  const textInputStyle: ViewStyle = { ...borderBottom, ...noBorderBottom, alignItems: "center", flexDirection: "row", ...viewStyle };
   const textStyle: TextStyle = { ...flexChild, ...fs18MedBlack, ...py(sh8) };
 
   return (

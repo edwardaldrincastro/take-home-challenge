@@ -1,13 +1,13 @@
-import { CommonActions } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import React, { Fragment } from 'react';
-import { useState } from 'react';
+import { CommonActions } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
+import React, { Fragment } from "react";
+import { useState } from "react";
 
-import { ContentPage, CustomSpacer, CustomTextInput, SafeAreaPage } from '../components';
-import { useStateData } from '../contexts';
-import { AxiosInstance, SERVICES, storeData } from '../integrations';
-import { sh40, sh8 } from '../styles';
-import { AlertDialog } from '../utils';
+import { ContentPage, CustomSpacer, CustomTextInput, SafeAreaPage } from "../components";
+import { useStateData } from "../contexts";
+import { AxiosInstance, SERVICES, storeData } from "../integrations";
+import { sh40, sh8 } from "../styles";
+import { AlertDialog } from "../utils";
 
 interface LoginPageProps {
   navigation: StackNavigationProp<RootNavigatorType>;
@@ -16,8 +16,8 @@ interface LoginPageProps {
 export const LoginPage = ({ navigation }: LoginPageProps) => {
   const { setStateData } = useStateData();
   const [showPassword, setShowPassword] = useState<boolean>(true);
-  const [inputEmail, setInputEmail] = useState<string>('');
-  const [inputPassword, setInputPassword] = useState<string>('');
+  const [inputEmail, setInputEmail] = useState<string>("");
+  const [inputPassword, setInputPassword] = useState<string>("");
 
   const showLoader = () => {
     setStateData({ loading: true });
@@ -37,13 +37,13 @@ export const LoginPage = ({ navigation }: LoginPageProps) => {
       const id = { id: key[0] };
       const data = res.data[key[0]];
       if (data !== undefined && inputPassword === data.password) {
-        await storeData('user', { ...data, ...id });
+        await storeData("user", { ...data, ...id });
         hideLoader();
         setTimeout(() => {
           return navigation.dispatch(
             CommonActions.reset({
               index: 0,
-              routes: [{ name: 'Dashboard' }],
+              routes: [{ name: "Dashboard" }],
             }),
           );
         }, 500);
@@ -51,7 +51,7 @@ export const LoginPage = ({ navigation }: LoginPageProps) => {
         return AlertDialog(`The email or password that you've entered is incorrect.`, hideLoader);
       }
     } else {
-      return AlertDialog('Error on Login', hideLoader);
+      return AlertDialog("Error on Login", hideLoader);
     }
   };
 
@@ -59,8 +59,8 @@ export const LoginPage = ({ navigation }: LoginPageProps) => {
     setShowPassword(!showPassword);
   };
 
-  const showPasswordText = showPassword ? 'Show Password' : 'Hide Password';
-  const buttonDisabled = inputEmail === '' || inputPassword === '';
+  const showPasswordText = showPassword ? "Show Password" : "Hide Password";
+  const buttonDisabled = inputEmail === "" || inputPassword === "";
 
   return (
     <Fragment>
